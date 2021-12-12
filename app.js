@@ -32,7 +32,11 @@ function getCountryNameByIso3(isoCode){
  */
 function getCountrySummary(isoCode){
     //complete with your codegit 
-    let (name,iso3,iso2,phone_code,)
+    let country = {}
+    country = countries.find(country=>country.iso3===isoCode);
+    let country2 = []
+    country2 = country.slice(0,5)  
+    return  country2 
 }
 
 function main() {
